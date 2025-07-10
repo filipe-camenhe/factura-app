@@ -1,0 +1,118 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+sup {
+  position: relative;
+  top: -0.4em;
+  vertical-align: baseline;
+}
+
+sub {
+  position: relative;
+  top: 0.4em;
+  vertical-align: baseline;
+}
+
+a {
+  text-decoration: none;
+}
+
+.page {
+  font-size: 1em;
+  width: 49.6em;
+  height: 73.2em;
+  margin: auto;
+  position: relative;
+}
+
+.page-inner {
+  position: relative;
+}
+
+.page-logo {
+  position: absolute;
+  pointer-events: none;
+  clip: rect(5.52em, 46.52em, 49.06em, 3.7em);
+  width: 100%;
+}
+
+.page-content {
+  font-size: 10em;
+  transform: scale(0.1);
+  transform-origin: top left;
+}
+
+@media print {
+  .page-content {
+    font-size: 1em;
+    transform: scale(1);
+  }
+}
+
+.text-box {
+  position: absolute;
+  white-space: nowrap;
+}
+
+.box-container {
+  position: relative;
+  width: 49.6em;
+}
+
+.box-height {
+  height: 7.3em;
+}
+
+/* Tipografia e Cores */
+
+.bold {
+  font-weight: bold;
+  font-size: 0.75em;
+  color: #000;
+}
+
+.regular {
+  font-size: 0.68em;
+  color: #000;
+}
+
+.gray-bold {
+  font-size: 0.68em;
+  color: #808080;
+  font-weight: bold;
+}
+
+.gray {
+  font-size: 0.68em;
+  color: #808080;
+}
+
+.small {
+  font-size: 0.52em;
+  color: #000;
+}
+
+.extra-small {
+  font-size: 0.58em;
+  color: #000;
+}
+
+/* Fontes (opcional: podem ser ignoradas se não houver uso) */
+
+@font-face {
+  font-family: "ArialBold";
+  src: url("font-bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "ArialRegular";
+  src: url("font-regular.woff") format("woff");
+}
+
+/* Extras */
+
+.border_bottom {
+  border-bottom: 1px solid #000;
+}
