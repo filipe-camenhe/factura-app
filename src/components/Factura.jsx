@@ -1,4 +1,3 @@
-import React from "react";
 import "./factura.css";
 
 function Factura({ data }) {
@@ -7,14 +6,12 @@ function Factura({ data }) {
   const cliente = outros_dados.cliente;
   const item = dados.itens[0];
 
-  return (
-    <div className="page">
-      <div className="page-inner">
+    {item.outros_dados && null}
 
-      </div>
+  return (
+
 
       <div className="page-content">
-        <div className="box-container box-height">
           {/* Dados da empresa */}
           <div className="text-box" style={{ left: "3.75em", top: "13em" }}>
             <span className="bold">{empresa.nome}</span>
@@ -53,7 +50,7 @@ function Factura({ data }) {
             </span>
           </div>
           <div className="text-box" style={{ left: "3.75em", top: "20em" }}>
-            <span className="regular">Data: {dados.data_emissao.split(" ")[0]}</span>
+            <span className="regular">Data: {dados.data_emissao?.split(" ")[0]}</span>
           </div>
 
           {/* Cabeçalho da Tabela */}
@@ -101,21 +98,19 @@ function Factura({ data }) {
             <span className="regular">Retenção:</span>
           </div>
           <div className="text-box" style={{ left: "39em", top: "29em" }}>
-            <span className="regular">{outros_dados.retencao_fonte.toLocaleString()} Kz</span>
+            <span className="regular">{outros_dados.retencao_fonte?.toLocaleString()} Kz</span>
           </div>
           <div className="text-box" style={{ left: "32em", top: "30em" }}>
             <span className="regular">Total:</span>
           </div>
           <div className="text-box" style={{ left: "39em", top: "30em" }}>
-            <span className="regular">{dados.total_doc.toLocaleString()} Kz</span>
+            <span className="regular">{dados.total_doc?.toLocaleString()} Kz</span>
           </div>
 
           {/* Valor por extenso */}
           <div className="text-box" style={{ left: "3.75em", top: "33em" }}>
             <span className="regular">Valor por extenso: {valor_por_extenso}</span>
           </div>
-        </div>
-      </div>
     </div>
   );
 }

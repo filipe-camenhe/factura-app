@@ -40,7 +40,7 @@ a {
 
 .page-content {
   font-size: 10em;
-  transform: scale(0.1);
+  transform: scale(0.15);
   transform-origin: top left;
 }
 
