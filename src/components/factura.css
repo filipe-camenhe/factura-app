@@ -1,118 +1,116 @@
 body {
-  margin: 0;
+  background: #eee;
   font-family: Arial, sans-serif;
+  font-size: 13px;
+  margin: 0;
+  padding: 15px;
 }
 
-sup {
-  position: relative;
-  top: -0.4em;
-  vertical-align: baseline;
+.factura {
+  background: #fff;
+  margin: 0 auto;
+  max-width: 750px;
+  padding: 25px;
+  border: 1px solid #ccc;
 }
 
-sub {
-  position: relative;
-  top: 0.4em;
-  vertical-align: baseline;
+.topo {
+  margin-bottom: 25px;
 }
 
-a {
-  text-decoration: none;
+.topo-linhas {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
-.page {
-  font-size: 1em;
-  width: 49.6em;
-  height: 73.2em;
-  margin: auto;
-  position: relative;
+.empresa {
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 3px;
 }
 
-.page-inner {
-  position: relative;
+.detalhes-empresa,
+.detalhes-cliente {
+  font-size: 12px;
+  margin-bottom: 10px;
 }
 
-.page-logo {
-  position: absolute;
-  pointer-events: none;
-  clip: rect(5.52em, 46.52em, 49.06em, 3.7em);
+.cliente {
+  font-weight: bold;
+  font-size: 13px;
+  margin-bottom: 3px;
+}
+
+.fatura-info {
+  border-top: 1px solid #000;
+  padding-top: 10px;
+  margin-bottom: 15px;
+  font-size: 12px;
+}
+
+.linha-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.tabela-itens {
   width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+  margin-bottom: 50px;
 }
 
-.page-content {
-  font-size: 10em;
-  transform: scale(0.1);
-  transform-origin: top left;
-}
-
-@media print {
-  .page-content {
-    font-size: 1em;
-    transform: scale(1);
-  }
-}
-
-.text-box {
-  position: absolute;
-  white-space: nowrap;
-}
-
-.box-container {
-  position: relative;
-  width: 49.6em;
-}
-
-.box-height {
-  height: 7.3em;
-}
-
-/* Tipografia e Cores */
-
-.bold {
-  font-weight: bold;
-  font-size: 0.75em;
-  color: #000;
-}
-
-.regular {
-  font-size: 0.68em;
-  color: #000;
-}
-
-.gray-bold {
-  font-size: 0.68em;
-  color: #808080;
-  font-weight: bold;
-}
-
-.gray {
-  font-size: 0.68em;
-  color: #808080;
-}
-
-.small {
-  font-size: 0.52em;
-  color: #000;
-}
-
-.extra-small {
-  font-size: 0.58em;
-  color: #000;
-}
-
-/* Fontes (opcional: podem ser ignoradas se não houver uso) */
-
-@font-face {
-  font-family: "ArialBold";
-  src: url("font-bold.woff") format("woff");
-}
-
-@font-face {
-  font-family: "ArialRegular";
-  src: url("font-regular.woff") format("woff");
-}
-
-/* Extras */
-
-.border_bottom {
+.tabela-itens th {
+  background: #f0f0f0;
+  padding: 6px;
   border-bottom: 1px solid #000;
+  font-weight: bold;
+  text-align: left;
+}
+
+.tabela-itens td {
+  padding: 6px;
+  text-align: left;
+  border-bottom: 1px solid #ccc;
+}
+
+.tabela-itens .descricao {
+  width: 40%;
+}
+
+.tabela-itens .quantidade,
+.tabela-itens .preco,
+.tabela-itens .total {
+  width: 20%;
+}
+
+.resumo {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 13px;
+  margin-top: 20px;
+}
+
+.resumo-total {
+  width: 250px;
+}
+
+.resumo-total td {
+  padding: 4px;
+}
+
+.total-final {
+  font-weight: bold;
+  border-top: 2px solid #000;
+  margin-top: 10px;
+}
+
+.rodape {
+  border-top: 1px solid #999;
+  font-size: 11px;
+  margin-top: 40px;
+  padding-top: 10px;
+  color: #555;
 }
