@@ -83,18 +83,18 @@ body {
 .tabela-itens .quantidade,
 .tabela-itens .preco,
 .tabela-itens .total {
-  width: 20%;
+  inline-size: 20%;
 }
 
 .resumo {
   display: flex;
   justify-content: flex-end;
   font-size: 13px;
-  margin-top: 20px;
+  margin-block-start: 20px;
 }
 
 .resumo-total {
-  width: 250px;
+  inline-size: 250px;
 }
 
 .resumo-total td {
@@ -103,8 +103,8 @@ body {
 
 .total-final {
   font-weight: bold;
-  border-top: 2px solid #000;
-  margin-top: 10px;
+  border-block-start: 2px solid #000;
+  margin-block-start: 10px;
 }
 
 .rodape {
